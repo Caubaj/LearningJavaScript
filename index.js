@@ -36,6 +36,103 @@
 //     console.log("No Happy New Year")
 // }
 
-
-
 // console.log();
+
+//////
+//////
+//////
+//////
+//CLOSURE = A function defined inside another function, the inner function has access to to
+//          the variables and scope of the outer functin. 
+//          Allow for the private variables and state maintance used frequently in JS 
+//          FrameWorks: React, Vue, Angular 
+
+
+// function outer()
+// {
+//     let message = "hello";
+
+//     function inner()
+//     {
+//         console.log(message);
+//     }
+//     inner();
+// }
+
+
+
+//     outer();
+//     console.log(message);
+
+
+// function createCounter()
+// {
+//     let count = 0;
+
+//     function increment()
+//     {
+//         count++;
+//         console.log(`Counter: ${count}`);
+//     }
+
+//     function getCount()
+//     {
+//         return count;
+//     }
+
+//     return {increment, getCount};
+// }
+// const counter = createCounter();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+
+// console.log(counter.getCount());
+
+
+
+// function game()
+// {
+//     let score = 0;
+
+//     function increaseScore(points)
+//         {
+//             score += points;
+//             console.log(`+${points} pts`);
+//         }
+//     function decreaseScore(points)
+//     {
+//         score -= points;
+//         console.log(`-${points} pts`);
+//     }
+
+//     function getScore(points)
+//     {
+//         return score;
+//     }
+
+//     return {increaseScore, decreaseScore, getScore};
+// }
+
+// score= 1000;
+
+
+//     const gameScore = game();
+
+
+//     gameScore.increaseScore(5);
+//     gameScore.increaseScore(8);
+//     gameScore.decreaseScore(2);
+
+//     console.log(`You score: ${gameScore.getScore()} pts`);
+    
+    
+
+
+
+
+
+
+
+
